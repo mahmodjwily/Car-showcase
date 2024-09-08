@@ -4,13 +4,14 @@ import React from "react";
 import { CustomButtonProps } from "@/types";
 const CustomButton = ({
   title,
+  type = "button",
   containerStyles,
   handleClick,
 }: CustomButtonProps) => {
   return (
     <button
       disabled={false}
-      type="button"
+      type={type}
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
