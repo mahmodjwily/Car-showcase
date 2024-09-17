@@ -11,13 +11,13 @@ import {
   ComboboxOptions,
   Transition,
 } from "@headlessui/react";
-import { searchManufacturerProps } from "@/types";
+import { SearchManufacturerProps } from "@/types";
 import { manufacturers } from "@/constants";
 
 const SearchManufacturer = ({
   manufacturer,
   setManufacturer,
-}: searchManufacturerProps) => {
+}: SearchManufacturerProps) => {
   const [query, setQuery] = useState("");
 
   const getPureValue = (value: string) => {
